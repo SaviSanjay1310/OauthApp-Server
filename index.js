@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
   })
 
 app.use('/posts', postRoutes);
-app.use("/user", userRouter);
+app.use('/user', userRouter);
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT|| 5000;

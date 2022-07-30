@@ -14,6 +14,10 @@ app.use(express.json({ limit: '30mb', extended: true }))
 app.use(express.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
+app.get('/', function (req, res) {
+    res.send('Hurray...Server is Working!!!')
+  })
+
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
